@@ -66,6 +66,7 @@ h3 {
 .page-header {
     padding-bottom: 20px;
     margin-bottom: 20px;
+    margin-top: 0px;
     border-bottom: 3px solid #ddd;
 }
 
