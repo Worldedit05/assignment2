@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="logo" href="#">Aaron Lee</a>
+                <a class="navbar-brand" id="logo" href="index.html">Aaron Lee</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
                 <div class="panel panel-default">
-                    <div class="panel-body">
+                    <div class="panel-body" id="work">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="page-header">
@@ -48,28 +48,51 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="http://placehold.it/275x200" class="img-responsive pull-left" alt="Image">
+                        <div class="row work">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="img-container">
+                                    <div class="ontop">
+                                        <h3>Hangman</h3>
+                                    </div>
+                                    <img src="assests/images/hangman.jpg" class="img-responsive pull-left" alt="Image">
+                                </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="http://placehold.it/275x200" class="img-responsive pull-left" alt="Image">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="img-container">
+                                    <div class="ontop">
+                                        <h3>RPG Game</h3>
+                                    </div>
+                                    <img src="assests/images/rpg_game.jpg" class="img-responsive pull-left" alt="Image">
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="http://placehold.it/275x200" class="img-responsive pull-left" alt="Image">
+                        <div class="row work">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="img-container">
+                                    <div class="ontop">
+                                        <h3>Trivia Game</h3>
+                                    </div>
+                                    <img src="assests/images/trivia_game.jpg" class="img-responsive pull-left" alt="Image">
+                                </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="http://placehold.it/275x200" class="img-responsive pull-left" alt="Image">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="img-container">
+                                    <div class="ontop">
+                                        <h3>UT Info Widget</h3>
+                                    </div>
+                                    <img src="assests/images/info_widget.jpg" class="img-responsive pull-left" alt="Image">
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="http://placehold.it/275x200" class="img-responsive pull-left" alt="Image">
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <!-- New project here -->
+                        <!-- Last row should always have #last-row -->
+                        <div class="row work" id="last-row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="img-container">
+                                    <div class="ontop">
+                                        <h3>Rock Paper Scissors</h3>
+                                    </div>
+                                    <img src="assests/images/rock_paper_sci.jpg" class="img-responsive pull-left" alt="Image">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,12 +102,18 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="page-header">
-                            <h1>Connect with me</h1>
+                            <h2>Connect with me</h2>
                         </div>
-                        <div>
-                            <img src="http://placehold.it/64x64" class="img-responsive pull-left" alt="Github">
-                            <img src="http://placehold.it/64x64" class="img-responsive pull-left" alt="LinkedIn">
-                            <img src="http://placehold.it/64x64" class="img-responsive pull-left" alt="Stack Overflow">
+                        <div class="row social">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sidebar">
+                                <img src="assests/images/github-128.png" class="img-responsive pull-left" height="62" width="62" alt="Github">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sidebar">
+                                <img src="assests/images/linkedin-128.png" class="img-responsive pull-left" height="62" width="62" alt="LinkedIn">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sidebar">
+                                <img src="assests/images/stackoverflow-128.png" class="img-responsive pull-left" height="62" width="62" alt="Stack Overflow">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,7 +125,6 @@
             <p>&copy; Copyright 2016 Aaron Lee</p>
         </div>
     </footer>
-    </div>
 </body>
 
 </html>

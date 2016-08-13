@@ -1,0 +1,193 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: url("../images/concrete_seamless.png");
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    /* Margin bottom by footer height */
+    margin-bottom: 105px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: 700;
+    color: #4aaaa5;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+#masthead {
+    background: #fff;
+    margin-bottom: 30px;
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+#logo {
+    width: 250px;
+    height: 90px;
+    background: #4aaaa5;
+    font: 30px 'Georgia', Times, Times New Roman, serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.page-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+}
+
+.panel-body {
+    padding: 30px;
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 100%;
+}
+
+.navstyle {
+    color: #999;
+    border-left: 1px solid #efefef;
+    text-align: center;
+}
+
+.navstyle-first {
+    border-left: 0 none;
+}
+
+.social {
+    line-height: 62px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+    background: #666;
+    color: #fff;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button {
+    color: #fff;
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+    margin-top: 10px;
+}
+
+.auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.work {
+    margin-bottom: 30px;
+}
+
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.ontop {
+    background: #4aaaa5;
+    text-align: center;
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    bottom: 10px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+    right: 0;
+    left: 0;
+}
+
+.ontop h3 {
+    color: #fff;
+}
+
+.work div h3 {
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .social {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .work {
+        margin-bottom: 0;
+    }
+    .work div img,
+    .img-container {
+        width: 100%;
+    }
+    .work div:nth-child(even) {
+        margin: 30px 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav>li>a {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #last-row {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social {
+        width: 65%;
+    }
+    #logo {
+        width: 100%;
+    }
+    .work div:nth-child(even) {
+        margin: 30px 0px;
+    }
+}
